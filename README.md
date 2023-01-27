@@ -34,3 +34,17 @@
   const profile = new myProfile('Test Name');
   // show error myProfile is not a constructor
   ```
+  ### - Context of this 
+  ```js 
+  const person = {
+    name: "A",
+    getProfile: function () {
+      console.log(this);
+    },
+    getProfileArrowFunction: () => {
+      console.log(this)
+    }
+  }
+  person.getProfile() // the context of this is the person object
+  person.getProfileArrowFunction() // the context of this is the window object
+  ```

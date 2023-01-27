@@ -11,10 +11,10 @@
     opposite, doesn't define arguments (but you can easily access the arrow function arguments using a rest 
     parameter ...args).
   ### - Implicit return
-    If the arrow function has one expression, then the expression is returned implicitly, even without using the 
-    return keyword.
+    If the arrow function has one expression, then the expression is returned implicitly, even without using 
+    the return keyword.
   ### - Methods
-    When you need to provide a method as a callback, regular functions need to bind this value and arrow functions 
+    When you need to provide a method as a callback, regular functions need to bind this value and arrow functions
     don't need to bind
 
 ## Example of the difference normal function - arrow function

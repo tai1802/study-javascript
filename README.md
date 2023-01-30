@@ -48,3 +48,10 @@
   person.getProfile() // the context of this is the person object
   person.getProfileArrowFunction() // the context of this is the window object
   ```
+### The differences between call, apply, and bind
+  #### + call
+    binds the this value, invokes the function, and allows you to pass a list of arguments.
+  #### + apply
+    binds the this value, invokes the function, and allows you to pass arguments as an array.
+  #### + bind
+    binds the this value, returns a new function, and allows you to pass in a list of arguments.

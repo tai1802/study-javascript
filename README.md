@@ -57,8 +57,7 @@
     binds the this value, returns a new function, and allows you to pass in a list of arguments.
 # When use bind, apply, call
   ## + bind
-    Bind is used to specify the this parameter for a function
-  
+    It binds the function with provided value and context but it does not executes the function. To execute function you need to call the function
   ```html
     <button id="button">Click Button</button>
   ```
@@ -80,7 +79,9 @@
     // result => firstName lastName
   ```
   ## + call and apply
-    Call and Apply is used to specify the this parameter for a function and pass the parameter.
+    call: It executes the function with provided context and parameter.
+    apply: It executes the function with provided context and parameter as array.
+  
   ``` html
     <button id="button1">Click Button 1</button>
     <button id="button2">Click Button 2</button>
@@ -102,3 +103,5 @@
     person.showName.apply(person, ['A', 'B'])
   });
   ```
+
+
